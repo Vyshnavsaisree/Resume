@@ -4,77 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Sree Vyshnav Naidu Buddha - Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 850px; 
+            margin: 40px auto; 
+            background: rgba(255,255,255,0.97); 
+            padding: 36px 48px 32px 48px; 
+            border-radius: 22px; 
+            box-shadow: 0 8px 32px rgba(0,0,0,0.13); 
+            border: 1.5px solid #fda085;
+        }
+        h1 { 
+            font-size: 2.6em; 
+            margin-bottom: 0; 
+            text-align: center; 
+            letter-spacing: 1px;
+            color: #4f8cff; /* Changed from #f76d6d to a blue shade */
+            font-weight: 700;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.18em;
+            color: #000; /* Changed from #2a6ebb to black */
+            margin-bottom: 18px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .contact {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 1.08em;
+        }
+        .contact span {
+            display: inline-block;
+            margin: 0 18px 8px 0;
+            color: #444;
+        }
+        .contact a {
+            color: #4f8cff; /* Changed from #f76d6d */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .contact a:hover {
+            color: #2a6ebb;
+            text-decoration: underline;
+        }
+        .contact + hr {
+            border: none;
+            border-bottom: 2.5px solid #4f8cff;
+            margin: 18px 0 32px 0;
+            width: 100%; /* Changed from 90% to 100% for full alignment */
+            box-sizing: border-box;
+        }
+        h2 {
+            color: #2a6ebb;
+            border-bottom: 1.5px solid #fda085;
+            padding-bottom: 6px;
+            margin-top: 36px;
+            margin-bottom: 18px;
+            font-size: 1.35em;
+            letter-spacing: 0.5px;
+        }
+        ul {
+            margin: 0 0 0 22px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 28px;
+        }
+        li:hover {
+            background: #fff7e6;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .edu-title {
+            font-weight: 600;
+            color: #4f8cff;
+        }
+        .edu-date {
+            font-size: 1em;
+            color: #888;
+            font-weight: 500;
+            min-width: 90px;
+            text-align: right;
+            margin-left: 12px;
+        }
+        .edu-institute {
+            margin-left: 0.5em;
+            color: #444;
+            font-size: 0.98em;
+            margin-top: 2px;
+        }
+        .badge {
+            display: inline-block;
+            background: #4f8cff;
+            color: #fff;
+            font-size: 0.85em;
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 4vw;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.1em;
+            }
+        }
+        .edu-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Sai Sree Vyshnav Naidu Buddha</h1>
-        <div style="text-align: center; font-size: 1.1em; color: #2a6ebb; margin-bottom: 10px;">(Software Technical Writer)</div>
+        <div class="subtitle">(Software Technical Writer)</div>
         <div class="contact">
             <span><strong>Mobile:</strong> <a href="tel:8885966448">8885966448</a></span>
             <span><strong>Email:</strong> <a href="mailto:vyshnavnaidu23101997@gmail.com">vyshnavnaidu23101997@gmail.com</a></span>
             <span><strong>Git:</strong> <a href="https://github.com/vyshnavnaidu" target="_blank">github.com/vyshnavnaidu</a></span>
         </div>
+        <hr>
         <div class="section">
             <h2>Professional Summary</h2>
             <p style="text-indent: 4em;">Innovative Technical Writer with 3+ years of experience in creating <strong>user manuals</strong>, <strong>installation guide</strong>, <strong>release notes</strong>, <strong>quick reference guides</strong>, <strong>maintenance manual</strong> and user-friendly documentation for software applications, systems, and APIs. Expertise in collaborating with cross-functional teams, including developers, product managers, and quality assurance, to ensure accurate and comprehensive documentation that meets both user needs and technical requirements.</p>
         </div>
         <div class="section">
             <h2>Education</h2>
-            <ul>
-                <li style="margin-bottom: 16px;">
-                    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                        <span><strong>Aeronautical Engineering</strong></span>
-                        <span style="font-size: 1em; color: #555;">2016-2020</span>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>
+                    <div class="edu-row">
+                        <span>
+                            <span class="edu-title">Aeronautical Engineering</span>
+                            <span class="badge">Degree</span>
+                            <div class="edu-institute">Nimra Institute of Science &amp; Technology – JNTUK</div>
+                        </span>
+                        <span class="edu-date">2016-2020</span>
                     </div>
-                    <div style="margin-left: 0.5em; color: #444;">Nimra Institute of Science &amp; Technology – JNTUK</div>
                 </li>
-                <li style="margin-bottom: 16px;">
-                    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                        <span><strong>Instrumentation</strong></span>
-                        <span style="font-size: 1em; color: #555;">2014-2016</span>
+                <li>
+                    <div class="edu-row">
+                        <span>
+                            <span class="edu-title">Instrumentation</span>
+                            <span class="badge">Diploma</span>
+                            <div class="edu-institute">Government old ITI</div>
+                        </span>
+                        <span class="edu-date">2014-2016</span>
                     </div>
-                    <div style="margin-left: 0.5em; color: #444;">Government old ITI</div>
                 </li>
-                <li style="margin-bottom: 16px;">
-                    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                        <span><strong>Intermediate</strong></span>
-                        <span style="font-size: 1em; color: #555;">2012-2014</span>
+                <li>
+                    <div class="edu-row">
+                        <span>
+                            <span class="edu-title">Intermediate</span>
+                            <span class="badge">PUC</span>
+                            <div class="edu-institute">Sri Chaitanya Jn. College</div>
+                        </span>
+                        <span class="edu-date">2012-2014</span>
                     </div>
-                    <div style="margin-left: 0.5em; color: #444;">Sri Chaitanya Jn. College</div>
                 </li>
-                <li style="margin-bottom: 16px;">
-                    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                        <span><strong>Tenth (ICSE)</strong></span>
-                        <span style="font-size: 1em; color: #555;">2012</span>
+                <li>
+                    <div class="edu-row">
+                        <span>
+                            <span class="edu-title">Tenth (ICSE)</span>
+                            <span class="badge">School</span>
+                            <div class="edu-institute">Good Shepherd English Medium School</div>
+                        </span>
+                        <span class="edu-date">2011-2012</span>
                     </div>
-                    <div style="margin-left: 0.5em; color: #444;">Good Shepherd English Medium School</div>
                 </li>
             </ul>
         </div>
         <div class="section">
             <h2>Experience</h2>
-            <p><strong>Technical Writer</strong><br>
-            <span style="display: flex; justify-content: space-between; align-items: baseline;">
-                <span>SONOVISION AETOS, Bengaluru, Karnataka</span>
-                <span style="font-size: 1em; color: #555;">Oct 2021 - June 2025</span>
-            </span></p>
-            <ul>
-                <li>Proficient in using technical writing tools such as <strong>Madcap Flare</strong>, Adobe FrameMaker, <strong>Microsoft Word</strong>, <strong>Confluence</strong> and <strong>Github</strong>.</li>
-                <li>Ability to translate complex technical information into user-friendly documentation for diverse audiences (End-users, Developers, Administrators).</li>
-                <li>Worked directly with subject matter expert <strong>(SME)</strong> to understand new product features, workflow, and technical nuances for documentation.</li>
-                <li>Created user manuals, Installation Guides, release notes knowledge base articles, FAQ's, and Troubleshooting Manual for Airbus Fleets (A320, A330, A340, A380, A350) & multitenant <strong>SaaS</strong> platform used by global customers.</li>
-                <li>Managed multiple documentation projects simultaneously, meeting deadlines for product releases and updates.</li>
-                <li>Delivered high-quality documentation under tight deadlines, often working in <strong>Agile</strong> or <strong>Scrum</strong> environments to align with sprint cycles.</li>
-                <li>Collected feedback from end-users and stakeholders to continuously improve documentation and make it more intuitive and accessible.</li>
-                <li>Reviewed and updated existing documentation to reflect new product features, bug fixes, and usability improvements.</li>
-                <li>Skilled in using Markdown, <strong>HTML</strong>/<strong>CSS</strong>, and <strong>XML</strong> for formatting and structuring technical content <strong>(DITA)</strong>.</li>
-                <li>Assisted in developing internal training materials for end-users and technical staff, enhancing product knowledge across teams.</li>
-                <li>Created troubleshooting guides and FAQ's to assist end-users in resolving common technical issues quickly and effectively.</li>
-                <li>Conducted user testing of documentation to ensure usability and clarity from a user perspective.</li>
-                <li>Worked closely with senior technical writers and developers to ensure content accuracy.</li>
-                <li>Proficient in using tools like <strong>Snagit</strong>, <strong>Captivate</strong> for capturing screenshots and creating tutorial videos.</li>
-                <li>Knowledge on <strong>SDLC</strong>, <strong>DDLC</strong> & <strong>Agile</strong> methodologies.</li>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                        <span>
+                            <span class="exp-title">Technical Writer</span>
+                            <div class="exp-company" style="color: #4f8cff; font-size: 1em; font-weight: bold;">Sonovision-Aetos, Bengaluru.</div>
+                        </span>
+                        <span class="edu-date">Oct 2021 - June 2025</span>
+                    </div>
+                    <ul>
+                        <li>Proficient in using technical writing tools such as <strong>Madcap Flare</strong>, Adobe FrameMaker, <strong>Microsoft Word</strong>, <strong>Confluence</strong> and <strong>Github</strong>.</li>
+                        <li>Ability to translate complex technical information into user-friendly documentation for diverse audiences (End-users, Developers, Administrators).</li>
+                        <li>Worked directly with subject matter expert <strong>(SME)</strong> to understand new product features, workflow, and technical nuances for documentation.</li>
+                        <li>Created user manuals, Installation Guides, release notes knowledge base articles, FAQ's, and Troubleshooting Manual for Airbus Fleets (A320, A330, A340, A380, A350) & multitenant <strong>SaaS</strong> platform used by global customers.</li>
+                        <li>Managed multiple documentation projects simultaneously, meeting deadlines for product releases and updates.</li>
+                        <li>Delivered high-quality documentation under tight deadlines, often working in <strong>Agile</strong> or <strong>Scrum</strong> environments to align with sprint cycles.</li>
+                        <li>Collected feedback from end-users and stakeholders to continuously improve documentation and make it more intuitive and accessible.</li>
+                        <li>Reviewed and updated existing documentation to reflect new product features, bug fixes, and usability improvements.</li>
+                        <li>Skilled in using Markdown, <strong>HTML</strong>/<strong>CSS</strong>, and <strong>XML</strong> for formatting and structuring technical content <strong>(DITA)</strong>.</li>
+                        <li>Assisted in developing internal training materials for end-users and technical staff, enhancing product knowledge across teams.</li>
+                        <li>Created troubleshooting guides and FAQ's to assist end-users in resolving common technical issues quickly and effectively.</li>
+                        <li>Conducted user testing of documentation to ensure usability and clarity from a user perspective.</li>
+                        <li>Worked closely with senior technical writers and developers to ensure content accuracy.</li>
+                        <li>Proficient in using tools like <strong>Snagit</strong>, <strong>Captivate</strong> for capturing screenshots and creating tutorial videos.</li>
+                        <li>Knowledge on <strong>SDLC</strong>, <strong>DDLC</strong> & <strong>Agile</strong> methodologies.</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="section">
